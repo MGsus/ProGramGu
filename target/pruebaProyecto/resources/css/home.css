@@ -1,0 +1,260 @@
+/* Sección 'Portfolio' */
+
+#portfolio {
+    width: 100vw;
+    background-color: #2F527A;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 1em 0;
+    padding-bottom: 4em;
+    top: -40px;
+}
+
+/* Título de la sección */
+#portfolio h1 {
+    font-weight: 300;
+    color: #D5D5D8;
+}
+
+/* Elementos del portfolio */
+#items {
+    width: 90vw;
+    margin: auto;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+}
+
+/* Cada uno de los elementos */
+.item {
+    height: 20em;
+    width: 20em;
+    background-color: red;
+    margin: 2em;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Información del elemento. Será visible cuando se pase
+ * el ratón por encima
+ */
+.infoItem {
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    background-color: rgba(0, 28, 52, 0.8);
+    opacity: 0;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1em;
+    color: #FFF;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* Cuando se pase el ratón por el item se hará visible */
+.infoItem:hover {
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+}
+
+/* Título del item */
+.infoItem h1 {
+    padding-bottom: 0.3em;
+    font-size: 2.2em;
+}
+
+/* Icono de enlace del item */
+.fa-link {
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+/* Cada elemento tendrá como fondo una imagen del proyecto */
+#simon {
+    background: url(http://files.unidosnarino.webnode.es/200000153-6a5626b52c/entidades-red-unidos.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#iwata {
+    background: url(http://www.telemundo.com/sites/nbcutelemundo/files/images/article/cover/2017/03/27/formulario-de-hipoteca-y-casa.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#majoras {
+    background: url(http://www.cmo.com/content/dam/CMO/Home%20Page/1046x616_personas_cartoon.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#msfa {
+    background: url(http://www.campoalegre-huila.gov.co/NuestraAlcaldia/SaladePrensa/PublishingImages/mas-familias.png) no-repeat center;
+    background-size: cover;
+}
+
+#programa2 {
+    background: url(http://maguarevidayregion.com/wp-content/uploads/2017/01/prospedidad-social.png) no-repeat center;
+    background-size: cover;
+}
+
+#programa3 {
+    background: url(https://www.utch.edu.co/portal/images/logos/jovenes_en_accion_logo.png) no-repeat center;
+    background-size: cover;
+}
+
+#fondito {
+
+    background: url("https://orig00.deviantart.net/5bfd/f/2016/070/3/f/purple_vibes___android_n_wallpaper_by_shreydan-d9uofx9.jpg") no-repeat;
+
+}
+
+.holas {
+
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Emoji_u2665.svg/1024px-Emoji_u2665.svg.png") no-repeat;
+
+}
+
+#mi_pequena {
+    width: 10px;
+    height: 10px;
+
+}
+
+@keyframes shaker {
+    0% {
+        transform: rotate(0deg);
+    }
+    29% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(1deg);
+    }
+    31% {
+        transform: rotate(2deg);
+    }
+    33% {
+        transform: rotate(1deg);
+    }
+    35% {
+        transform: rotate(0deg);
+    }
+    37% {
+        transform: rotate(-1deg);
+    }
+    39% {
+        transform: rotate(-2deg);
+    }
+    41% {
+        transform: rotate(-1deg);
+    }
+    43% {
+        transform: rotate(0deg);
+    }
+    45% {
+        transform: rotate(1deg);
+    }
+    47% {
+        transform: rotate(2deg);
+    }
+    49% {
+        transform: rotate(1deg);
+    }
+    51% {
+        transform: rotate(0deg);
+    }
+    53% {
+        transform: rotate(-1deg);
+    }
+    55% {
+        transform: rotate(-2deg);
+    }
+    57% {
+        transform: rotate(-1deg);
+    }
+    59% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#mi_btn {
+
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-name: shaker;
+
+    display: inline-block;
+    font-size: 20px;
+
+    font-family: 'Paytone One', sans-serif;
+
+    background: #2f527a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2f527a, rgba(67, 155, 214, 1)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2f527a, #439ad5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    text-decoration: none;
+
+    border: solid 2px #60da4e;
+    color: white;
+    border-radius: 0.4em;
+    transition: all 0.3s linear;
+    margin-top: 30px;
+
+    padding: 18px;
+
+}
+
+#fondo_home {
+
+    background-image: url("https://k46.kn3.net/taringa/2/0/F/9/0/4/irvinn666/8AF.jpg");
+
+}
+
+#mi_tituloo {
+
+    color: #426bb3;
+
+}
+
+#logo {
+
+}
